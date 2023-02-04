@@ -1,23 +1,92 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className='navbar app'>App Bar</nav>
+      <nav className='navbar board'>Board Bar</nav>
+      <div className='board-columns'>
+        <div className='column'>
+          <header>Brainstorm</header>
+          <ul>
+            <li>
+              <img src='https://i.pinimg.com/564x/32/d0/a6/32d0a693aa28f4d7f2f48c48dcf0b79c.jpg' alt='alt-img' />
+              Title: PhuocPB
+            </li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+        <div className='column'>
+          <header>Brainstorm</header>
+          <ul>
+            <li>
+              <img src='https://i.pinimg.com/564x/32/d0/a6/32d0a693aa28f4d7f2f48c48dcf0b79c.jpg' alt='alt-img' />
+              Title: PhuocPB
+            </li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+        <div className='column'>
+          <header>Brainstorm</header>
+          <ul>
+            <li>
+              <img src='https://i.pinimg.com/564x/32/d0/a6/32d0a693aa28f4d7f2f48c48dcf0b79c.jpg' alt='alt-img' />
+              Title: PhuocPB
+            </li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+        <div className='column'>
+          <header>Brainstorm</header>
+          <ul>
+            <li>
+              <img src='https://i.pinimg.com/564x/32/d0/a6/32d0a693aa28f4d7f2f48c48dcf0b79c.jpg' alt='alt-img' />
+              Title: PhuocPB
+            </li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+        <div className='column'>
+          <header>Brainstorm</header>
+          <ul>
+            <li>
+              <img src='https://i.pinimg.com/564x/32/d0/a6/32d0a693aa28f4d7f2f48c48dcf0b79c.jpg' alt='alt-img' />
+              Title: PhuocPB
+            </li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+            <li>Add what you'd like to work on below</li>
+          </ul>
+          <footer>Add another card</footer>
+        </div>
+      </div>
     </div>
   );
 }
