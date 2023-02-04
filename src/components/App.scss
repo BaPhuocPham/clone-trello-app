@@ -1,0 +1,19 @@
+@import './setting.scss';
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  height: 100vh;
+  display: grid;
+  // set chiều cao của row: row đầu 40px, hai 50px, ba 1fr
+  grid-template-rows: 40px 50px 1fr; 
+  line-height: 1.3em;
+  background-color: $board-bg-color;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}

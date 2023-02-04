@@ -1,0 +1,26 @@
+@import '../setting';
+
+$common-element-bg: rgba(255, 255, 255, 0.24);
+
+.board-content {
+  display: flex;
+  margin: 0 $gap $gap;
+  overflow-x: auto;
+
+  //CSS scroolbar of board
+  //turn off appearance of default scroolbar 
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+    //set width of scroolbar
+    &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+  //CSS scroolbar
+  &::-webkit-scrollbar-thumb {
+    background-color: $common-element-bg; 
+    border-radius: 8px;
+  }
+
+  
+}
