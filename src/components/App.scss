@@ -12,4 +12,10 @@
   overflow: hidden;
   background-color: $board-bg-color;
   font-family: 'Source Sans Pro', sans-serif;
+  color: $app-main-text-color;
+  
+  .icon {
+    font-size: 14px;
+    margin-right: 3px;
+  }
 }
