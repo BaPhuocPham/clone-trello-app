@@ -1,8 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import './setting.scss';
 
-
-
 *{
   margin: 0;
   padding: 0;
@@ -38,6 +36,7 @@
   [type=tel].form-control:focus, 
   [contenteditable].form-control:focus {
     box-shadow: none;
+    border: 1px solid $input-border-color;
   }
   .btn:focus, .btn:active {
     outline: none !important;
@@ -53,7 +52,18 @@
 
     &:focus {
       background-color: white;
-      border: 1px solid $input-border-color;
     }
+  }
+
+  span.cancle-icon {
+    margin-left: $gap;
+      i {
+        font-size: 20px;
+        cursor: pointer;
+        color: $alert-danger;
+        &:hover{
+          color: darken($alert-danger, 10);
+        }
+      }
   }
 }

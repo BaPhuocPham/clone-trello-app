@@ -63,17 +63,6 @@ $common-element-bg: rgba(255, 255, 255, 0.24);
         border-color: $input-border-color;
       }
     }
-    span.cancle-new-column {
-      margin-left: $gap;
-      i {
-        font-size: 20px;
-        cursor: pointer;
-        color: $alert-danger;
-        &:hover{
-          color: darken($alert-danger, 10);
-        }
-      }
-    }
   }
 
 }
