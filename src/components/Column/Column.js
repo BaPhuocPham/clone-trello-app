@@ -13,7 +13,7 @@ import { saveContentAfterPressEnter, selectAllInlineText } from "../../utilities
 function Column(props) {
 
   const { column, onCardDrop, onUpdateColumn, onAddNewCardToColumn } = props
-  const cards = mapOrder(column.cards, column.cardOrder, 'id')
+  const cards = mapOrder(column.cards, column.cardOrder, '_id')
 
   const [showConfirmModal, setShowConfirmModal] = useState(false)
   const toggleShowConfirmModal = () => setShowConfirmModal(!showConfirmModal)
@@ -47,14 +47,14 @@ function Column(props) {
     const newCardToAdd = {
       id: Math.random().toString(36).substring(2, 5), //5 random characters will removed when we implement code api
       boardId: column.boardId,
-      columnId: column.id,
+      columnId: column._id,
       title: newCardTitle.trim(),
       cover: null
     }
 
     let newColumn = cloneDeep(column)
     newColumn.cards.push(newCardToAdd)
-    newColumn.cardOrder.push(newCardToAdd.id)
+    newColumn.cardOrder.push(newCardToAdd._id)
 
     onAddNewCardToColumn(newColumn)
     setNewCardTitle('')
@@ -118,7 +118,7 @@ function Column(props) {
       <Container
         orientation="vertical" //default
         groupName="col"
-        onDrop={dropResult => onCardDrop(column.id, dropResult)}
+        onDrop={dropResult => onCardDrop(column._id, dropResult)}
         getChildPayload={index => cards[index]}
         dragClass="card-ghost"
         dropClass="card-ghost-drop"
